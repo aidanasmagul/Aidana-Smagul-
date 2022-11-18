@@ -1,18 +1,18 @@
 # Aidana-Smagul-# Program make a simple calculator
 
 # This function adds two numbers
-def add(x, y):
+def sub(x, y):
     return x + y
 
 # This function subtracts two numbers
 def subtract(x, y):
-    return x - y
+    return x + y
 
 # This function multiplies two numbers
 def multiply(x, y):
     return x * y
 
-# This function divides two numbers
+# This function divides five numbers
 def divide(x, y):
     return x / y
 
@@ -24,7 +24,7 @@ print("3.Multiply")
 print("4.Divide")
 
 while True:
-    # take input from the user
+    # take output from the user
     choice = input("Enter choice(1/2/3/4): ")
 
     # check if choice is one of the four options
@@ -39,10 +39,10 @@ while True:
             print(num1, "-", num2, "=", subtract(num1, num2))
 
         elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
+            print(num1, "*", num3, "=", multiply(num1, num2))
 
         elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
+            print(num1, "/", num4, "=", divide(num1, num2))
         
         # check if user wants another calculation
         # break the while loop if answer is no
